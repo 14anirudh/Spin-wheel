@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../wheeel.png";
+import logo from "../images/wheeel.png";
 import { Link } from "react-router-dom";
 
 const Result = () => {
@@ -20,7 +20,9 @@ const Result = () => {
           </h2>
           <div className="flex m-4 h-16 border border-gray-300 items-center justify-center">
             <div className="h-16 w-2/3 bg-[#A2C2A5] flex items-center justify-start p-2 rounded-tl-lg rounded-bl-lg">
-              <p className="text-white font-bold text-2xl md:text-3xl ">XAXPDF20</p>
+              <p className="text-white font-bold text-2xl md:text-3xl ">
+                XAXPDF20
+              </p>
             </div>
             <div className="h-16 w-1/3 bg-[#146531] flex items-center justify-center rounded-tr-lg rounded-br-lg">
               <button className="text-white font-bold text-lg">COPY</button>

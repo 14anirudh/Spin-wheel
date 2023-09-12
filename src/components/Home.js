@@ -2,7 +2,7 @@ import React from "react";
 import { LuMail } from "react-icons/lu";
 import { MdOutlinePhone } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../wheeel.png";
+import logo from "../images/wheeel.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {

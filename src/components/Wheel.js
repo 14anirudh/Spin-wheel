@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./SpinWheel.css"; // Import your CSS file
-import actual from "../actual.png";
+//import spinwheel.css file present in src 
+import "../SpinWheel.css"; 
+import actual from "../images/actual.png";
 import { Link } from "react-router-dom";
+
 
 const Wheel = () => {
   const [spinning, setSpinning] = useState(false);
