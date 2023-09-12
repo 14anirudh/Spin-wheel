@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../images/wheeel.png";
 import { Link } from "react-router-dom";
+import logo from "../images/wheeel.png";
 
-const Result = () => {
+const Result: React.FC = () => {
   const result = localStorage.getItem("result");
   return (
     <div className="flex flex-col md:flex-row items-center justify-center pt-8 masked">
@@ -11,7 +11,7 @@ const Result = () => {
       </div>
 
       <div className="flex flex-col md:mr-10 md:w-1/2 md:max-w-md justify-center pl-12">
-        <div className="rounded-lg flex flex-col h-27rem w-10/12 mt-10 md:mt-0 z-10   ">
+        <div className="rounded-lg flex flex-col h-27rem w-10/12 mt-10 md:mt-0 z-10">
           <h2 className="mb-1 font-poppins font-bold text-3xl text-center md:text-left">
             Congrats! You Won:
           </h2>
@@ -20,7 +20,7 @@ const Result = () => {
           </h2>
           <div className="flex m-4 h-16 border border-gray-300 items-center justify-center">
             <div className="h-16 w-2/3 bg-[#A2C2A5] flex items-center justify-start p-2 rounded-tl-lg rounded-bl-lg">
-              <p className="text-white font-bold text-2xl md:text-3xl ">
+              <p className="text-white font-bold text-2xl md:text-3xl">
                 XAXPDF20
               </p>
             </div>

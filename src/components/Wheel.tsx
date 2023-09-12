@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-//import spinwheel.css file present in src 
 import "../SpinWheel.css"; 
-import actual from "../images/actual.png";
 import { Link } from "react-router-dom";
+import actual from "../images/actual.png";
 
-
-const Wheel = () => {
-  const [spinning, setSpinning] = useState(false);
-  const [result, setResult] = useState(null);
+const Wheel: React.FC = () => {
+  const [spinning, setSpinning] = useState<boolean>(false);
+  const [result, setResult] = useState<string | null>(null); // Initialize result as null
 
   const probabilities = [
     { label: "30% SITEWIDE OFF", probability: 0.16 },
@@ -20,29 +18,29 @@ const Wheel = () => {
 
   const spinWheel = () => {
     if (spinning) return;
-
+  
     const random = Math.random();
     let currentProbability = 0;
-    let selectedSection = null;
-
+    let selectedSection: { label: string; probability: number } | null = null;
+  
     for (const section of probabilities) {
       currentProbability += section.probability;
-
+  
       if (random <= currentProbability) {
         selectedSection = section;
         break;
       }
     }
-
+  
     setSpinning(true);
-
+  
     setTimeout(() => {
-      setResult(selectedSection.label);
+      setResult(selectedSection?.label || null); // Update result here
       setSpinning(false);
     }, 3000);
   };
-
-  localStorage.setItem("result", result);
+  
+  localStorage.setItem("result", result || ""); // Set a default value for result
 
   return (
     <div className="spin-wheel-container masked">

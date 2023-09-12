@@ -2,10 +2,10 @@ import React from "react";
 import { LuMail } from "react-icons/lu";
 import { MdOutlinePhone } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../images/wheeel.png";
 import { Link } from "react-router-dom";
+import logo from "../images/wheeel.png";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center pt-8 masked px-4 md:px-0">
       <div className=" md:w-1/2 flex justify-center">

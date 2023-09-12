@@ -1,6 +1,6 @@
 import React from "react";
 
-function NotFound() {
+function NotFound(): JSX.Element {
   return (
     <div className="masked text-3xl font-bold p-16">
       <p>404 Not Found</p>
