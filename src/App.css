@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 .App {
   text-align: center;
   background-color: #c6eec9;
@@ -14,6 +16,7 @@
   background-size: 100% 85%, 100% 70%;
   background-position: center top, center bottom;
   background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
 }
 
 .image {

@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Wheel from "./components/Wheel";
 import Result from "./components/Result";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/spin" element={<Wheel />} />
         <Route path="/result" element={<Result />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
