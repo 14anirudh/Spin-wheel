@@ -59,6 +59,7 @@ const Home: React.FC = () => {
               type="email"
               id="email"
               name="email"
+              placeholder="Email"
               className="w-full bg-white rounded-t-lg border-b border-[#146531] focus:ring-2 focus:ring-[#146531] text-base outline-none text-gray-700 px-3 mb-1 leading-8 transition-colors duration-200 ease-in-out pl-8"
             />
             <div className="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none">
@@ -71,6 +72,7 @@ const Home: React.FC = () => {
                 type="text"
                 id="phone"
                 name="phone"
+                 placeholder="Phone Number"
                 className="w-full bg-white rounded-t-lg border-b border-[#146531] focus:ring-2 focus:ring-[#146531] text-base outline-none text-gray-700 px-3 mb-1 leading-8 transition-colors duration-200 ease-in-out pl-8"
               />
               <div className="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none">
