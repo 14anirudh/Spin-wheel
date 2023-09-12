@@ -5,7 +5,44 @@ import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import logo from "../images/wheeel.png";
 
+
 const Home: React.FC = () => {
+  // mock api call to create a user with email and number onclick of button and then redirect to spin page
+// interface User {
+//   email: string;
+//   phoneNumber: string;
+// }
+
+// function CreateUserButton() {
+//   const [user, setUser] = useState<User>({
+//     email: '',
+//     phoneNumber: '',
+//   });
+
+//   const createUser = () => {
+//     const headers = new Headers();
+//     headers.set('Content-Type', 'application/json');
+//     headers.set('Accept', 'application/json');
+
+//     const request = new Request('/users', {
+//       method: 'POST',
+//       headers: headers,
+//       body: JSON.stringify(user),
+//     });
+
+//     fetch(request)
+//       .then((res) => {
+//         console.log('got response:', res);
+//         if (res.ok) {
+//           console.log('User created!');
+//         } else {
+//           console.error('Error creating user');
+//         }
+//       })
+//       .catch((error) => {
+//         console.error('Error creating user:', error);
+//       });
+//   };
   return (
     <div className="flex flex-col md:flex-row items-center justify-center pt-8 masked px-4 md:px-0">
       <div className=" md:w-1/2 flex justify-center">
